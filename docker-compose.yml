@@ -4,11 +4,11 @@ services:
     container_name: mariadb_alone
     environment:
       MYSQL_ROOT_PASSWORD: admin
-      MYSQL_DATABASE: mydatase
+      MYSQL_DATABASE: mydatabase
       MYSQL_USER: user
       MYSQL_PASSWORD: userpassword
     ports:
-      - "3306:3306"
+      - "3307:3307"
     volumes:
       - mariadb_data:/var/lib/mysql
 
